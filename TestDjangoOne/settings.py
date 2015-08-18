@@ -104,5 +104,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS=[
-    '/home/xxmmdj/PycharmProjects/TestDjangoOne/Login/templates'
+    os.getcwd() + '/Login/templates'
 ]
