@@ -21,4 +21,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^Login/', include('Login.urls')),
     url(r'', include('Login.urls')),
+    url(r'^Show/$', include('Show.urls')),
+
 )

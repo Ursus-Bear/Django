@@ -104,5 +104,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS=[
-    os.getcwd() + '/Login/templates'
+    os.getcwd() + '/Login/templates',
+    os.getcwd() + '/Show/templates',
 ]
+
+LOGIN_URL = '/Login/'
