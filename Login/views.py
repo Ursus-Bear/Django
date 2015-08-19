@@ -26,8 +26,8 @@ def login(request):
             pass_word = uf.cleaned_data['pass_word']
 
             #表单数据和数据库比较
-            user = Users.objects.filter(user_name__exact=user_name, user_pwd__exact=pass_word)
-
+            # user = Users.objects.filter(user_name__exact=user_name, user_pwd__exact=pass_word)
+            user = auth.authenticate(username=user_name, password=pass_word)
             if user:
                 # user_save = User.objects.create_user(username=user_name,password=pass_word,email='xx@xx.xx')
                 # user_save.save
