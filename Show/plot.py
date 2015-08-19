@@ -42,7 +42,7 @@ def LoadEcg():
 
 path = os.getcwd()
 # print(path)
-libLoadEcg = ctypes.cdll.LoadLibrary(path + '/libcn100_compress.so')
+libLoadEcg = ctypes.cdll.LoadLibrary(path + '/libcn100_file.so')
 
 __int16 = ctypes.c_int16* 11920 * 12
 
